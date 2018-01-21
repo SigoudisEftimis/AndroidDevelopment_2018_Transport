@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+        <dimen name="login_layout1">370dp</dimen>
+        <dimen name="d_value">100dp</dimen>
+        <dimen name="d_value_small">25dp</dimen>
+        <dimen name="d_width_layout">300dp</dimen>
+        <dimen name="d_value_small_2">15dp</dimen>
+        <dimen name="d_value_small_3">30dp</dimen>
+</resources>

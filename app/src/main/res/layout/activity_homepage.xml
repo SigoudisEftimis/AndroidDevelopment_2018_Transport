@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/com_facebook_button_login_silver_background_color"
+    tools:context="com.example.eftimis.transport.HomepageActivity">
+
+    <LinearLayout
+        android:layout_width="@dimen/d_width_layout"
+        android:layout_height="@dimen/d_width_layout"
+        android:layout_marginLeft="@dimen/d_value_small_3"
+        android:layout_marginTop="@dimen/d_value_small"
+        android:background="@android:color/transparent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/com_facebook_likeview_internal_padding"
+            android:fontFamily="serif-monospace"
+            android:text="@string/findBest"
+            android:textAlignment="center"
+            android:textColor="@color/com_facebook_device_auth_text"
+            android:textSize="24sp" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="@android:dimen/notification_large_icon_height"
+            android:layout_height="@android:dimen/notification_large_icon_height"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="@dimen/d_value_small_2"
+            app:srcCompat="@drawable/handshake" />
+
+        <AutoCompleteTextView
+            android:id="@+id/autoCompleteTextView2"
+            android:layout_width="match_parent"
+            android:layout_height="@android:dimen/app_icon_size"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/d_value_small_2"
+            android:background="@drawable/searchtext"
+            android:drawableLeft="@android:drawable/ic_menu_mylocation"
+            android:fontFamily="serif-monospace"
+            android:hint="@string/shipping_from"
+            android:padding="@dimen/com_facebook_likeboxcountview_caret_width" />
+
+        <AutoCompleteTextView
+            android:id="@+id/autoCompleteTextView"
+            android:layout_width="match_parent"
+            android:layout_height="@android:dimen/app_icon_size"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/d_value_small_2"
+            android:background="@drawable/searchtext"
+            android:drawableLeft="@android:drawable/ic_menu_mylocation"
+            android:fontFamily="serif-monospace"
+            android:hint="@string/shipping_to"
+            android:padding="@dimen/com_facebook_likeview_internal_padding" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/d_value_small"
+            android:background="@drawable/searchtext"
+            android:drawableLeft="@android:drawable/ic_menu_my_calendar"
+            android:fontFamily="serif-monospace"
+            android:onClick="setDate"
+            android:padding="@dimen/com_facebook_likeboxcountview_caret_width" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/d_value_small_2"
+            android:background="@android:color/transparent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/fastBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/searchtext"
+                android:drawableLeft="@drawable/fast"
+                android:paddingLeft="@dimen/d_value_small_3" />
+
+            <Button
+                android:id="@+id/weightBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/searchtext"
+                android:drawableLeft="@drawable/gauge"
+                android:paddingLeft="@dimen/d_value_small_3" />
+
+            <Button
+                android:id="@+id/breakBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/searchtext"
+                android:drawableLeft="@drawable/breakable"
+                android:paddingLeft="@dimen/d_value_small_3" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/d_value_small"
+            android:background="@drawable/searchtext"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/header2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/autoCompleteTextView"
+                android:layout_margin="@dimen/com_facebook_likeboxcountview_text_padding"
+                android:fontFamily="serif-monospace"
+                android:text="@string/shipping_from"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/com_facebook_likeboxcountview_text_padding"
+                android:layout_marginTop="@dimen/com_facebook_likeboxcountview_text_size"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/address2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/header"
+                    android:layout_weight="1"
+                    android:fontFamily="serif-monospace"
+                    android:hint="@string/hintFrom"
+                    android:textColor="@color/cardview_dark_background" />
+
+                <TextView
+                    android:id="@+id/name2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/header"
+                    android:layout_weight="1"
+                    android:fontFamily="serif-monospace"
+                    android:hint="@string/hintFrom_2"
+                    android:textColor="@color/cardview_dark_background" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/header_"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/com_facebook_likeview_internal_padding"
+                android:layout_marginTop="@dimen/d_value_small_2"
+                android:fontFamily="serif-monospace"
+                android:text="@string/shipping_to"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/com_facebook_likeview_internal_padding"
+                android:layout_marginTop="@dimen/com_facebook_likeboxcountview_text_size"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/header"
+                    android:layout_weight="1"
+                    android:fontFamily="serif-monospace"
+                    android:hint="@string/hintTo" />
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/header"
+                    android:layout_weight="1"
+                    android:fontFamily="serif-monospace"
+                    android:hint="@string/hintTo_2" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/com_facebook_likeview_internal_padding"
+                android:layout_marginLeft="@dimen/com_facebook_likeboxcountview_text_padding"
+                android:layout_marginTop="@dimen/d_value_small"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/weight"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/header"
+                    android:layout_weight="1"
+                    android:fontFamily="serif-monospace"
+                    android:text="@string/weigth"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/weighTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/header"
+                    android:layout_weight="1"
+                    android:fontFamily="serif-monospace"
+                    android:hint="5"
+                    android:textColor="@color/cardview_dark_background" />
+
+                <TextView
+                    android:id="@+id/weight2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/header"
+                    android:layout_weight="1"
+                    android:fontFamily="serif-monospace"
+                    android:text="@string/packages"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/numberTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/header"
+                    android:layout_weight="1"
+                    android:fontFamily="serif-monospace"
+                    android:hint="10"
+                    android:textColor="@color/cardview_dark_background"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/com_facebook_likeboxcountview_text_padding"
+                android:layout_marginTop="@dimen/d_value_small"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/fast_delivery"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/header"
+                    android:layout_weight="1"
+                    android:fontFamily="serif-monospace"
+                    android:text="@string/fastDelivery"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/delivery"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/header"
+                    android:layout_weight="1"
+                    android:fontFamily="serif-monospace"
+                    android:hint="@string/No"
+                    android:textColor="@color/cardview_dark_background" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/d_value_small_2"
+                android:layout_marginLeft="@dimen/com_facebook_likeboxcountview_text_padding"
+                android:layout_marginTop="@dimen/d_value_small"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/breakable"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/header"
+                    android:layout_weight="1"
+                    android:fontFamily="serif-monospace"
+                    android:text="@string/breakable"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/breakableTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/header"
+                    android:layout_weight="1"
+                    android:fontFamily="serif-monospace"
+                    android:hint="@string/No"
+                    android:textColor="@color/cardview_dark_background" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/searchButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/d_value_small_3"
+            android:layout_marginTop="@dimen/d_value_small_2"
+            android:layout_weight="1"
+            android:background="@drawable/border"
+            android:fontFamily="serif-monospace"
+            android:text="@string/search"
+            android:textAllCaps="false"
+            android:textColor="@color/cardview_light_background"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/loginBtn2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:fontFamily="serif-monospace"
+            android:text="Logout"
+            android:textAllCaps="false"
+            android:textColor="@color/colorAccent"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+</ScrollView>

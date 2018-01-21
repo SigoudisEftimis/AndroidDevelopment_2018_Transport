@@ -1,0 +1,133 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sh"
+    tools:context="com.example.eftimis.transport.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorRegister"
+        android:orientation="vertical"
+        android:paddingLeft="15dp">
+
+        <TextView
+            android:id="@+id/welcometxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/d_value_small_3"
+            android:fontFamily="serif-monospace"
+            android:text="@string/welcome"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_light"
+            android:textSize="30sp" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="@android:dimen/notification_large_icon_width"
+            android:layout_height="@android:dimen/notification_large_icon_width"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/d_value_small_2"
+            app:srcCompat="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/introductionTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="@dimen/d_value_small"
+            android:fontFamily="serif-monospace"
+            android:gravity="center_vertical|center"
+            android:text="@string/introduction"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_light"
+            android:textSize="18sp" />
+
+        <com.facebook.login.widget.LoginButton
+            android:id="@+id/facebookBtn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/shapetextview"
+            android:visibility="invisible" />
+
+        <EditText
+            android:id="@+id/emailTxt"
+            android:layout_width="@dimen/d_width_layout"
+            android:layout_height="@android:dimen/app_icon_size"
+            android:layout_marginBottom="@dimen/d_value_small_2"
+            android:layout_marginLeft="@dimen/d_value_small_2"
+            android:background="@drawable/shapetextview"
+            android:ems="10"
+            android:fontFamily="serif-monospace"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            android:padding="@dimen/d_value_small_2"
+            android:textColor="@color/cardview_light_background"
+            android:textColorHint="@android:color/background_light" />
+
+        <EditText
+            android:id="@+id/passwordTxt"
+            android:layout_width="@dimen/d_width_layout"
+            android:layout_height="@android:dimen/app_icon_size"
+            android:layout_marginLeft="@dimen/d_value_small_2"
+            android:background="@drawable/shapetextview"
+            android:ems="10"
+            android:fontFamily="serif-monospace"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:padding="@dimen/d_value_small_2"
+            android:textColor="@color/cardview_light_background"
+            android:textColorHint="@android:color/background_light"
+            android:textColorLink="@color/colorPrimaryDark" />
+
+
+        <Button
+            android:id="@+id/loginFacebookBtn"
+            android:layout_width="@dimen/d_width_layout"
+            android:layout_height="@android:dimen/app_icon_size"
+            android:layout_marginLeft="@dimen/d_value_small_2"
+            android:layout_marginTop="@dimen/d_value_small"
+            android:background="@drawable/com_facebook_button_login_silver_background"
+            android:drawableLeft="@drawable/com_facebook_button_icon_blue"
+            android:fontFamily="serif-monospace"
+            android:paddingLeft="@dimen/d_value_small_2"
+            android:text="@string/facebook"
+            android:textAllCaps="false"
+            android:textColor="@color/com_facebook_button_background_color" />
+
+        <Button
+            android:id="@+id/loginBtn"
+            android:layout_width="@dimen/d_width_layout"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/linearLayout"
+            android:layout_alignStart="@+id/linearLayout"
+            android:layout_below="@+id/linearLayout"
+            android:layout_marginLeft="@dimen/d_value_small_2"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/com_facebook_button_background"
+            android:fontFamily="serif-monospace"
+            android:text="@string/login"
+            android:textAllCaps="false"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/registerButton"
+            android:layout_width="@dimen/d_width_layout"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@android:dimen/app_icon_size"
+            android:layout_marginLeft="@dimen/d_value_small_2"
+            android:layout_marginTop="@dimen/com_facebook_likeview_text_size"
+            android:background="@android:color/holo_orange_dark"
+            android:fontFamily="serif-monospace"
+            android:text="@string/registertxt"
+            android:textAllCaps="false"
+            android:textColor="@android:color/background_light"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+</ScrollView>

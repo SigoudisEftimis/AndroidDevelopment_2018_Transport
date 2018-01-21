@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/gridlayout_width"
+    android:layout_height="match_parent"
+    android:background="@color/com_facebook_button_login_silver_background_color"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/d_value_small_2"
+        android:layout_marginTop="@dimen/d_value_small_2"
+        android:fontFamily="serif-monospace"
+        android:text="@string/input"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/d_value_small_2"
+        android:layout_marginTop="@dimen/d_value_small_3"
+        android:fontFamily="serif-monospace"
+        android:text="@string/weightTxt"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/weightinput"
+        android:layout_width="match_parent"
+        android:layout_height="@android:dimen/notification_large_icon_height"
+        android:layout_marginLeft="@dimen/d_value_small_2"
+        android:layout_marginRight="@dimen/d_value_small_2"
+        android:layout_marginTop="@dimen/d_value_small_2"
+        android:background="@drawable/searchtext"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:padding="@dimen/com_facebook_likeboxcountview_text_padding"
+        android:paddingLeft="@dimen/d_value_small_2" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/d_value_small_2"
+        android:layout_marginTop="@dimen/com_facebook_likeboxcountview_caret_width"
+        android:fontFamily="serif-monospace"
+        android:text="@string/weight" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/d_value_small_2"
+        android:layout_marginTop="@dimen/d_value_small_3"
+        android:fontFamily="serif-monospace"
+        android:text="@string/Number"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/number"
+        android:layout_width="match_parent"
+        android:layout_height="@android:dimen/notification_large_icon_width"
+        android:layout_marginLeft="@dimen/d_value_small_2"
+        android:layout_marginRight="@dimen/d_value_small_2"
+        android:layout_marginTop="@dimen/d_value_small_2"
+        android:background="@drawable/searchtext"
+        android:ems="10"
+        android:inputType="number"
+        android:padding="@dimen/d_value_small_2" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/d_value_small_3"
+        android:layout_marginLeft="@dimen/d_value_small_2"
+        android:layout_marginRight="@dimen/d_value_small_2"
+        android:layout_marginTop="@dimen/d_value_small_2"
+        android:background="@drawable/border"
+        android:text="@string/submit"
+        android:textAllCaps="false"
+        android:textColor="@color/cardview_light_background" />
+</LinearLayout>
