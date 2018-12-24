@@ -1,6 +1,5 @@
 <resources>
-    <string name="facebook_app_id">1905081263135372</string>
-    <string name="fb_login_protocol_scheme">fb1905081263135372</string>
+   
     <string name="app_name">Transport</string>
     <string name="username">Username</string>
     <string name="password">Password</string>
